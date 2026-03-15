@@ -335,13 +335,17 @@
     background: rgba(0,0,0,0.3);
     display: flex; align-items: center; justify-content: center;
     opacity: 0; transition: opacity 0.25s;
+    cursor: pointer;
   }
   .project-card:hover .project-overlay { opacity: 1; }
-  .project-overlay span {
+  .project-overlay a {
     background: var(--white); color: var(--plum);
     font-size: 0.8rem; font-weight: 700;
     padding: 8px 20px; border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
   }
+  .project-overlay a:hover { background: var(--pink); color: var(--white); }
 
   .project-body { padding: 24px; }
   .project-cat {
@@ -556,7 +560,7 @@
       </div>
       <div class="stat-grid">
         <div class="stat-box">
-          <div class="num">4+</div>
+          <div class="num">5+</div>
           <div class="lbl">Projects Done</div>
         </div>
         <div class="stat-box">
@@ -677,7 +681,7 @@
     <div class="project-card fade-in">
       <div class="project-thumb orange">
         <div class="project-thumb-label">E-Commerce Sales Report</div>
-        <div class="project-overlay"><span>View Project</span></div>
+        <div class="project-overlay"><a href="#" onclick="alert('📄 Project report coming soon!'); return false;">📄 View Project Report</a></div>
       </div>
       <div class="project-body">
         <div class="project-cat">Excel · Dashboard</div>
@@ -703,7 +707,7 @@
     <div class="project-card fade-in" style="transition-delay:0.1s">
       <div class="project-thumb purple">
         <div class="project-thumb-label">Flight Analysis Report</div>
-        <div class="project-overlay"><span>View Project</span></div>
+        <div class="project-overlay"><a href="#" onclick="alert('📄 Project report coming soon!'); return false;">📄 View Project Report</a></div>
       </div>
       <div class="project-body">
         <div class="project-cat">Power BI · Analysis</div>
@@ -719,7 +723,7 @@
           <span class="project-tag">Bar Chart</span>
         </div>
         <div class="project-links">
-          <a href="https://app.powerbi.com" target="_blank" class="proj-link powerbi">📊 Power BI Dashboard</a>
+          <a href="https://app.powerbi.com/groups/me/reports/256d090e-bbd2-44cc-9285-d7a1b6514cf9/84f5334c0398324baa8b?experience=power-bi&clientSideAuth=0" target="_blank" class="proj-link powerbi">📊 Power BI Dashboard</a>
           <a href="https://colab.research.google.com" target="_blank" class="proj-link colab">🔗 Colab Notebook</a>
         </div>
       </div>
@@ -729,7 +733,7 @@
     <div class="project-card fade-in" style="transition-delay:0.05s">
       <div class="project-thumb teal">
         <div class="project-thumb-label">Sales Pivot Analysis</div>
-        <div class="project-overlay"><span>View Project</span></div>
+        <div class="project-overlay"><a href="#" onclick="alert('📄 Project report coming soon!'); return false;">📄 View Project Report</a></div>
       </div>
       <div class="project-body">
         <div class="project-cat">Excel · Pivot Analysis</div>
@@ -754,7 +758,7 @@
     <div class="project-card fade-in" style="transition-delay:0.15s">
       <div class="project-thumb blue">
         <div class="project-thumb-label">KBI Dashboard</div>
-        <div class="project-overlay"><span>View Project</span></div>
+        <div class="project-overlay"><a href="#" onclick="alert('📄 Project report coming soon!'); return false;">📄 View Project Report</a></div>
       </div>
       <div class="project-body">
         <div class="project-cat">Excel · KPI Dashboard</div>
@@ -769,9 +773,36 @@
           <span class="project-tag">Trend Analysis</span>
         </div>
         <div class="project-links">
-          <a href="https://app.powerbi.com" target="_blank" class="proj-link powerbi">📊 Power BI Dashboard</a>
+          <a href="https://app.powerbi.com/groups/me/reports/256d090e-bbd2-44cc-9285-d7a1b6514cf9/84f5334c0398324baa8b?experience=power-bi&clientSideAuth=0" target="_blank" class="proj-link powerbi">📊 Power BI Dashboard</a>
           <a href="https://github.com/malakyousof" target="_blank" class="proj-link github">📁 GitHub</a>
           <a href="https://colab.research.google.com" target="_blank" class="proj-link colab">🔗 Colab Notebook</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card fade-in" style="transition-delay:0.2s">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #b71c1c 0%, #ef5350 100%);">
+        <div class="project-thumb-label">U.S. Retail & Food Sales</div>
+        <div class="project-overlay"><a href="https://raw.githubusercontent.com/malakyousof/Sales_Retial_Sales/main/US_Retail_Food_Sales_Report.pdf" target="_blank">📄 View Project Report</a></div>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">Power BI · Sales Analysis</div>
+        <div class="project-title">U.S. Retail & Food Sales Analysis</div>
+        <p class="project-desc">
+          Power BI dashboard analyzing U.S. retail and food sales trends, performance metrics, and category breakdowns. Covers regional comparisons, top-performing segments, and sales growth over time.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Power BI</span>
+          <span class="project-tag">DAX</span>
+          <span class="project-tag">Sales Analysis</span>
+          <span class="project-tag">KPIs</span>
+          <span class="project-tag">Trend Analysis</span>
+        </div>
+        <div class="project-links">
+          <a href="https://app.powerbi.com/groups/me/reports/256d090e-bbd2-44cc-9285-d7a1b6514cf9/84f5334c0398324baa8b?experience=power-bi&clientSideAuth=0" target="_blank" class="proj-link powerbi">📊 Power BI Dashboard</a>
+          <a href="https://github.com/malakyousof/Sales_Retial_Sales" target="_blank" class="proj-link github">📁 GitHub</a>
+          <a href="https://colab.research.google.com/drive/1SSv6pUZ540GfuA_05ttRuydxdhyp_se8?usp=sharing" target="_blank" class="proj-link colab">🔗 Colab Notebook</a>
         </div>
       </div>
     </div>
